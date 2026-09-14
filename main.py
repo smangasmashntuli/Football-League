@@ -116,7 +116,6 @@ class TeamStats:
 
 @dataclass
 class InputError:
-    """A single row-level input problem; ``line`` is a 1-based line number."""
 
     line: int
     reason: str
@@ -195,7 +194,6 @@ class LeagueTable:
 
 
 class StandingsCalculator:
-    # -- input ------------------------------------------------------------
 
     @staticmethod
     def _resolve_team_name(raw_name: str, resolver: Dict[str, str]) -> str:
